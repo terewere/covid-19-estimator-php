@@ -50,7 +50,7 @@ class Impact
     {
         return (int) ((15 / 100) * $this->infectionsByRequestedTime);
     }
-
+ 
     // challenge 2 of 2
     // not sure of this computation: the question wasn't clear
     public function getHospitalBedsByRequestedTime()
