@@ -12,13 +12,12 @@ class Impact
     protected $casesForVentilatorsByRequestedTime = '';
     protected $dollarsInFlight = '';
     protected $input;
-    
+
     public function __construct($input)
     {
         $this->input = $input;
         $this->init();
     }
-
 
     public function init()
     {
