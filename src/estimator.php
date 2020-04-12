@@ -12,5 +12,5 @@ function covid19ImpactEstimator($data)
     'data' => $data,
     'impact' => $impact->getData(),
     'severeImpact' => $severeImpact->getData()
-   ];
+   ]; 
 }
