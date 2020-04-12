@@ -6,7 +6,7 @@
  function getProjectedTime($factor){
   return  2 ** $factor;
  } 
- 
+  
 function convertElapseTimeTodays($timeToElapse, $periodType) {
   if ($periodType === 'days') {
     return $timeToElapse;
