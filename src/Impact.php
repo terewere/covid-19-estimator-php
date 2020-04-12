@@ -17,6 +17,7 @@ class Impact
         $this->input = $input;
         $this->init();
     }
+    
 
     public function init()
     {
