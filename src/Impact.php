@@ -42,7 +42,7 @@ class Impact
 
         $factor = getFactor($timeInDays);
         $projectedTime = getProjectedTime($factor);
-        return $this->currentlyInfected * $projectedTime;
+        return (int)($this->currentlyInfected * $projectedTime);
     }
 
     // challenge 2 of 1
