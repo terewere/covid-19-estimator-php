@@ -80,7 +80,7 @@ class Impact
              * $this->input['region']['avgDailyIncomeInUSD']) / $timeInDays;
 
         return (int) ($amount);
-    }
+    } 
 
     public function getData()
     {
