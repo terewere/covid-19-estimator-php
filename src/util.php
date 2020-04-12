@@ -5,8 +5,8 @@
  
  function getProjectedTime($factor){
   return  2 ** $factor;
- }
-
+ } 
+ 
 function convertElapseTimeTodays($timeToElapse, $periodType) {
   if ($periodType === 'days') {
     return $timeToElapse;
@@ -15,7 +15,7 @@ function convertElapseTimeTodays($timeToElapse, $periodType) {
   } if ($periodType === 'months') {
     return $timeToElapse * 30;
   }
-  
+
   return 'period types include days,weeks and months';
 }
 
