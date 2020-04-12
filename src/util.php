@@ -2,7 +2,7 @@
  function getFactor($days){
     return (int)($days / 3);
  }
-
+ 
  function getProjectedTime($factor){
   return  2 ** $factor;
  }
