@@ -15,6 +15,7 @@ function convertElapseTimeTodays($timeToElapse, $periodType) {
   } if ($periodType === 'months') {
     return $timeToElapse * 30;
   }
+  
   return 'period types include days,weeks and months';
 }
 
