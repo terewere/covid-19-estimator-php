@@ -29,7 +29,6 @@ jobs:
         run: |
           yarn install
           yarn add phplint
-
       - name: Run Audits
         run: yarn phplint './src/**/*.php'
   
@@ -56,7 +55,6 @@ jobs:
         run: |
           yarn install
           yarn add xml2json axios @actions/core @actions/github
-
       - name: Install PHP
         uses: shivammathur/setup-php@v1
         with:
@@ -66,7 +64,6 @@ jobs:
         run: |
           composer require --dev phpunit/phpunit
           composer require guzzlehttp/guzzle:~6.0
-
       - name: Prepare Audits
         uses: actions/checkout@v2
         with:
@@ -76,7 +73,6 @@ jobs:
       - name: Run Audits
         run: |
           vendor/bin/phpunit ./audits/ch-1 --testdox --log-junit audits/ch-1.xml
-
       - name: Report Audits
         uses: BuildforSDG-Cohort1-Assessment/jest-out@v1
         with:
@@ -107,7 +103,6 @@ jobs:
         run: |
           yarn install
           yarn add xml2json axios @actions/core @actions/github
-
       - name: Install PHP
         uses: shivammathur/setup-php@v1
         with:
@@ -117,7 +112,6 @@ jobs:
         run: |
           composer require --dev phpunit/phpunit
           composer require guzzlehttp/guzzle:~6.0
-
       - name: Prepare Audits
         uses: actions/checkout@v2
         with:
@@ -157,7 +151,6 @@ jobs:
         run: |
           yarn install
           yarn add xml2json axios @actions/core @actions/github
-
       - name: Install PHP
         uses: shivammathur/setup-php@v1
         with:
@@ -167,7 +160,6 @@ jobs:
         run: |
           composer require --dev phpunit/phpunit
           composer require guzzlehttp/guzzle:~6.0
-
       - name: Prepare Audits
         uses: actions/checkout@v2
         with:
